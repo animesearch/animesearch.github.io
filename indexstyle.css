@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: relative !important;
+    background-image: url("./backgroundimage.jpeg");
+    background-attachment: fixed;
+}
+
+h1 {
+    font-style: "Alegrya Sans", !important;
+}
+
+.icon {
+    -webkit-border-radius: 50% !important;
+     -moz-border-radius: 50% !important;
+          border-radius: 50% !important;
+}
+
+input {
+    -webkit-border-radius: 50px !important;
+     -moz-border-radius: 50px !important;
+          border-radius: 50px !important;
+    border: 0px !important;
+    box-shadow: rgb(48, 46, 46) 2px 2px 2px;
+}
+
+.navbar {
+    position: fixed;
+    box-shadow: rgb(128, 125, 125) 2px 2px 2px !important;
+}
+
+.carousel {
+    width: 640px;
+    height: 360px;
+}
