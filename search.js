@@ -10,14 +10,14 @@ $(document).ready(function(){
                 let animes = result.results;
                 $.each(animes, function(i, data){
                     $("#movie-list").append(`
-                    <div class="col-md-4 position-relative align-items-stretch">
-                        <div class="card h-100  mb-2">
+                    <div class="col-md-4 position-relative">
+                        <div class="card   mb-2">
                             <img src="`+data.image_url+`" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">`+data.title+`</h5>
                                     <h6 class="card-subtitle mb-2 text-muted">`+data.type+`</h6>
                                     <p class="card-text">`+data.synopsis+`</p>
-                                    <a href="`+data.url+`" class="btn btn-primary">See more</a>
+                                    <a href="`+data.url+`" class="btn btn-primary" target="blank_">See more</a>
                                 </div>
                         </div>
                     </div>
@@ -68,8 +68,17 @@ $(document).ready(function(){
         })
         $(".searchcontainer").css("padding-top", "0px")
         $(".animesearchtext").css("display", "none")
-        //$("body").css("background-image", "none")
+        $("body").css("background-image", "none")
         $("body").css("box-shadow", "rgb(185, 174, 174) 2px 2px 2px !important")
+        $(".inputdiv").append(`
+            <a href="./"><img src="Logo.png" type="image/png" class="logo"></a>
+            <style>
+                .logo {
+                    width: 32px;
+                    position: absolute;
+                    right: 105%;
+                }
+        `)
         //document.getElementsByClassName("searchcontainer").setAttribute("style", "padding-top: 0px;")
     } 
     $('#search-button').on("click", function(){

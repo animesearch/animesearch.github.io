@@ -15,6 +15,7 @@ body {
 
 h1 {
     font-style: "Alegrya Sans", !important;
+    color: #700B97;
 }
 
 .icon {
@@ -28,7 +29,7 @@ input {
      -moz-border-radius: 50px !important;
           border-radius: 50px !important;
     border: 0px !important;
-    box-shadow: rgb(156, 148, 148) 2px 2px 2px;
+    box-shadow: rgb(231, 231, 231) 2px 2px 2px;
 }
 
 .navbar {
